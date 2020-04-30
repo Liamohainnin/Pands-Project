@@ -7,17 +7,23 @@ df = pandas.read_csv(r'C:\Users\User1\source\repos\pands-project\iris.csv',
            # parse_dates=['sepal_width'],
             header=0, 
             names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width','species'])
-df.head (5)
+#print (df.head (5))
 df.to_csv('Iris_modified.csv')
-print (df.head (25))
+
+df.hist (hue="species")
+
+plt.savefig('Histogramofallvariables.png')
+
+#print (df.head (25))
+VariableSummary=df.describe ()
 print (df.describe ())
-#from pandas.plotting import scatter_matrix
-#scatter_matrix(df)
-sns.pairplot(df, hue="species")
+#VariableSummary.hist ()
+print (df.head (5))
+sns.pairplot(df, hue="species" , palette="husl")
 plt.show()
-df.hist(hue="species")
-plt.show()
-#
+#df.hist(hue="species")
+#plt.show()
+print (df.head (5))
 print (df.groupby('species')["sepal_length",'sepal_width','petal_length', 'petal_width'].median())
 print (df.groupby('species').agg ({"sepal_length":['mean', 'median','std'],'sepal_width':['mean', 'median','std'],'petal_length':['mean', 'median','std'], 'petal_width':'sum'}))
 
