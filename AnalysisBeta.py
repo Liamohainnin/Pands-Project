@@ -1,8 +1,11 @@
 import pandas
 import matplotlib.pyplot as plt 
 import seaborn as sns
+import pylab
+
+
 sns.set(style="ticks")
-df = pandas.read_csv(r'C:\Users\User1\source\repos\pands-project\iris.csv', 
+df = pandas.read_csv(r'C:\Users\User1\source\repos\pands-project\iris.csv',  #Read csv file into data frame
             #index_col='Index', 
            # parse_dates=['sepal_width'],
             header=0, 
@@ -10,19 +13,21 @@ df = pandas.read_csv(r'C:\Users\User1\source\repos\pands-project\iris.csv',
 #print (df.head (5))
 df.to_csv('Iris_modified.csv')
 
-df.hist (hue="species")
+df.hist (figsize=(10, 10))                                                      # Plot all variables as Histograms
+pylab.suptitle("Histograms of variables in Iris dataset", fontsize="xx-large")
 
-plt.savefig('Histogramofallvariables.png')
+plt.savefig('Histogramofallvariables.png')                                      # Save plots of all variables to png
 
-#print (df.head (25))
-VariableSummary=df.describe ()
+VariableSummary=df.describe ()                                                  # Generate summary of all the variables in the Iris Dataset
 print (df.describe ())
-#VariableSummary.hist ()
-print (df.head (5))
-sns.pairplot(df, hue="species" , palette="husl")
+VariableSummary.to_csv('Summary.csv')                                           # Export summary of all the variables in the Iris Dataset to csv file
+
+
+sns.pairplot(df, hue="species" , palette="husl")                                # Generate scatterplot of each pair of variables in the Iris Dataset
 plt.show()
-#df.hist(hue="species")
-#plt.show()
+plt.savefig('Scatterplotofallvariables.png')                                    # Save scatterplot of each pair of variables to png
+
+
 print (df.head (5))
 print (df.groupby('species')["sepal_length",'sepal_width','petal_length', 'petal_width'].median())
 print (df.groupby('species').agg ({"sepal_length":['mean', 'median','std'],'sepal_width':['mean', 'median','std'],'petal_length':['mean', 'median','std'], 'petal_width':'sum'}))
