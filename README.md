@@ -23,7 +23,7 @@ The analysis.py script does however produce an additional aggregation of the Iri
  
  | virginica | 	6.588	       |             6.5	       |       0.635879593274432	  |      5.552	       |         5.55	    |        0.551894695663983	 |     2.974	 |              3	             |    0.322496638172638	 | 2.026 | 	2	 | 0.274650055636667 | 
 
-Here are the aggregated stats not grouped/ broken down by species as produced by the data frame describe data summary operatation.
+Here are the aggregated stats not grouped/ broken down by species as produced by the data frame describe data summary operation.
 
   ---     | sepal_length | sepal_width | petal_length | petal_width|
  ----------------------------------------------------------------------
