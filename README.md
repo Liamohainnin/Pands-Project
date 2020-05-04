@@ -2,7 +2,7 @@ Analysis
 
 Analysis.py is a python script for the automated analysis and plotting of the Fishers Iris dataset. This dataset has been a key dataset for many statistical classification techniques in machine learning and data analytics.
 Fishers Iris Dataset is well known multivariate dataset often used to demonstrate a linear discriminant analysis.
-The data was actually collected by Edgar Anderson an American Botonist and consists of data from 3 species of Iris,
+The data was actually collected by Edgar Anderson an American Botanist and consists of data from 3 species of Iris,
 Iris Sertosa, Iris Versicolor and Iris Virginica. 
 
 The Iris Flower data is divided into a number of categories, Petal Width, Petal Length, Sepal width and Sepal width and measurements were taken in cm's. 
@@ -60,13 +60,21 @@ https://realpython.com/run-python-scripts/
 Usage
 
 Reads the Iris.csv file into data frame.
+
 Plots all variables as Histograms.
+
 Save plots of all variables to png file in local directory.
+
 Generates a summary of all the variables in the Iris Dataset.
-Exports summary of all the variables in the Iris Dataset to csv file .
-Generates scatterplot of each pair of variables in the Iris Dataset
+
+Exports summary of all the variables in the Iris Dataset to csv file.
+
+Generates scatterplot of each pair of variables in the Iris Dataset.
+
 Saves scatterplot of each pair of variables to png file in local directory.
+
 Generates a summary of all the variables in the Iris Dataset grouped by Species.
+
 Outputs a Horizontal bar chart of the variables with sub plots showing variables grouped by species together to a png file in local directory. 
 
 
