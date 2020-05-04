@@ -15,33 +15,33 @@ the analysis of the dataset further as has been described in detail at the towar
 
 The analysis.py script does however produce an additional aggregation of the Iris datasets variables grouping the records by species type and producing group mean,median and standard deviation.
 
- | species	 | sepal_length_Mean | sepal_length_Median | sepal_length_Std | petal_length_Mean | petal_length_Median | 	petal_length_Std | 	sepal_width_Mean | 	sepal_width_Median | 	sepal_width_Std | 	petal_width_Mean | 	petal_width_Median | 	petal_width_Std | 
+ |species|Sepal_len_Mean|Sepal_len_Med|Sepal_len_Std|Petal_len_Mean|Petal_len_Med|Petal_len_Std|Sepal_Wid_Mean| 	Sepal_width_Med|Sepal_width_Std|Petal_wid_Mean|Petal_wid_Med|Petal_wid_Std| 
  -------------------------------------------------------------------------------------------------------------------------
- | setosa	 |     5.006       |                 5	   |           0.352489687213451 | 	      1.464	    |            1.5	 |           0.173511159436445   | 	3.418	 |              3.4	        |     0.381024397954691 | 	0.244 | 	0.2	0.107209503081678 | 
+ | setosa	 | 5.006  | 5	| 0.3524 | 1.464  | 1.5	 |  0.1735 |	3.418	 |  3.4	 | 0.3810 | 	0.244 | 	0.2 |	0.1072 | 
  
- | versicolor | 	5.936	  |                  5.9	 |             0.516171147063863	 |       4.26	  |              4.35	   |         0.469910977239958	   |   2.77	     |          2.8	       |      0.313798323378411	 | 1.326	 | 1.3	0.197752680004544 | 
+ | versicolor | 	5.936	  |  5.9	 | 0.5161	 |  4.26 |  4.35	 |  0.4699 | 2.77 |  2.8	 |  0.3137	 | 1.326	 | 1.3	0.1977 | 
  
- | virginica | 	6.588	       |             6.5	       |       0.635879593274432	  |      5.552	       |         5.55	    |        0.551894695663983	 |     2.974	 |              3	             |    0.322496638172638	 | 2.026 | 	2	 | 0.274650055636667 | 
+ | virginica | 	6.588	 |   6.5	  |  0.6358	  |  5.552	 | 5.55	|   0.5518	 |  2.974	 | 3	 | 0.3224	| 2.026 | 	2	 | 0.2746 | 
 
 Here are the aggregated stats not grouped/ broken down by species as produced by the data frame describe data summary operation.
 
   ---     | sepal_length | sepal_width | petal_length | petal_width|
  ----------------------------------------------------------------------
- | count	 |    150	   |        150	|       150	   |        150 |
+ | count	 |   150	   |   150	|   150	 |   150 |
  
- | mean	 |    5.843333 |	   3.054	|    3.758667	|     1.198667|
+ | mean	  |   5.8433 | 3.054	| 3.7586	|  1.1986|
  
- | std	      |   0.828066  |	  0.433594	|  1.76442	  |   0.763161|
+ | std	   |  0.8280  | 0.4335	| 1.764 |   0.7631|
  
- | min	      |   4.3	   |         2	  |      1	     |       0.1|
+ | min	   |   4.3	   |  2	   |  1  |  0.1|
  
- | 25.00%	  |   5.1	   |     2.8	 |      1.6	   |         0.3|
+ | 25.00%	|   5.1	   |  2.8	 | 1.6	 |  0.3|
  
- | 50.00%	  |   5.8	   |      3	    |   4.35       |  	1.3|
+ | 50.00%	|   5.8	   |   3   | 4.35 | 	1.3|
  
- | 75.00%    |  	6.4    |  	3.3	   |     5.1	   |         1.8|
+ | 75.00% |  	6.4    | 3.3	  | 5.1  |  1.8|
  
- | max	      |      7.9	   |     4.4	|        6.9	|            2.5|
+ | max	   |   7.9	   |   4.4	|  6.9	|  2.5|
 
 References 
 
