@@ -15,7 +15,7 @@ the analysis of the dataset further as has been described in detail at the towar
 
 The analysis.py script does however produce an additional aggregation of the Iris datasets variables grouping the records by species type and producing group mean,median and standard deviation.
 
- |species|Sepal_len_Mean|Sepal_len_Med|Sepal_len_Std|Petal_len_Mean|Petal_len_Med|Petal_len_Std|Sepal_Wid_Mean| 	Sepal_width_Med|Sepal_width_Std|Petal_wid_Mean|Petal_wid_Med|Petal_wid_Std| 
+ |Species|Sepal_len_Mean|Sepal_len_Med|Sepal_len_Std|Petal_len_Mean|Petal_len_Med|Petal_len_Std|Sepal_Wid_Mean| 	Sepal_width_Med|Sepal_width_Std|Petal_wid_Mean|Petal_wid_Med|Petal_wid_Std| 
  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- | --- | --- | 
  | setosa	 | 5.006  | 5	| 0.3524 | 1.464  | 1.5	 |  0.1735 |	3.418	 |  3.4	 | 0.3810 | 	0.244 | 	0.2 |	0.1072 | 
  | versicolor | 	5.936	  |  5.9	 | 0.5161	 |  4.26 |  4.35	 |  0.4699 | 2.77 |  2.8	 |  0.3137	 | 1.326	 | 1.3	0.1977 | 
@@ -34,12 +34,6 @@ Here are the aggregated stats not grouped/ broken down by species as produced by
  | 75.00% |  	6.4    | 3.3	  | 5.1  |  1.8|
  | max	   |   7.9	   |   4.4	|  6.9	|  2.5|
  
- | Command | Description |
-| --- | --- |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |
-
-
 
 References 
 ------------
