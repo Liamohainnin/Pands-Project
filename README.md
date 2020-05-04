@@ -79,7 +79,7 @@ Outputs a Horizontal bar chart of the variables with sub plots showing variables
 
 
 Contributing
-
+--------
 At this stage we do not anticipate any further contributions being required.
 License
 
