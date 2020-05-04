@@ -18,7 +18,7 @@ The analysis.py script does however produce an additional aggregation of the Iri
  |Species|Sepal_len_Mean|Sepal_len_Med|Sepal_len_Std|Petal_len_Mean|Petal_len_Med|Petal_len_Std|Sepal_Wid_Mean| 	Sepal_width_Med|Sepal_width_Std|Petal_wid_Mean|Petal_wid_Med|Petal_wid_Std| 
  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- | --- | --- | 
  | setosa	 | 5.006  | 5	| 0.3524 | 1.464  | 1.5	 |  0.1735 |	3.418	 |  3.4	 | 0.3810 | 	0.244 | 	0.2 |	0.1072 | 
- | versicolor | 	5.936	  |  5.9	 | 0.5161	 |  4.26 |  4.35	 |  0.4699 | 2.77 |  2.8	 |  0.3137	 | 1.326	 | 1.3	0.1977 | 
+ | versicolor | 	5.936	  |  5.9	 | 0.5161	 |  4.26 |  4.35	 |  0.4699 | 2.77 |  2.8	 |  0.3137	 | 1.326	 | 1.3 |	0.1977 | 
  | virginica | 	6.588	 |   6.5	  |  0.6358	  |  5.552	 | 5.55	|   0.5518	 |  2.974	 | 3	 | 0.3224	| 2.026 | 	2	 | 0.2746 | 
 
 Here are the aggregated stats not grouped/ broken down by species as produced by the data frame describe data summary operation.
