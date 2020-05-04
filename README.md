@@ -25,23 +25,23 @@ The analysis.py script does however produce an additional aggregation of the Iri
 
 Here are the aggregated stats not grouped/ broken down by species as produced by the data frame describe data summary operation.
 
-  ---     | sepal_length | sepal_width | petal_length | petal_width|
- ----------------------------------------------------------------------
+ |Aggregate | sepal_length | sepal_width | petal_length | petal_width|
+ | --- | --- | --- | --- | --- |
  | count	 |   150	   |   150	|   150	 |   150 |
- 
  | mean	  |   5.8433 | 3.054	| 3.7586	|  1.1986|
- 
  | std	   |  0.8280  | 0.4335	| 1.764 |   0.7631|
- 
  | min	   |   4.3	   |  2	   |  1  |  0.1|
- 
  | 25.00%	|   5.1	   |  2.8	 | 1.6	 |  0.3|
- 
  | 50.00%	|   5.8	   |   3   | 4.35 | 	1.3|
- 
  | 75.00% |  	6.4    | 3.3	  | 5.1  |  1.8|
- 
  | max	   |   7.9	   |   4.4	|  6.9	|  2.5|
+ 
+ | Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
+
+
 
 References 
 ------------
