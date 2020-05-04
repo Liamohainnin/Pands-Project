@@ -43,10 +43,11 @@ VariableSummary.to_csv('Summary.csv')
 
 # Generate scatterplot of each pair of variables in the Iris Dataset
 sns.pairplot(df, hue="species" , palette="husl")                                
+# Save scatterplot of each pair of variables to png
+plt.savefig('Scatterplotofallvariables.png')   
 plt.show()
 
-# Save scatterplot of each pair of variables to png
-plt.savefig('Scatterplotofallvariables.png')                                    
+                             
 
 print (df.groupby('species').agg(sepal_length_Mean=('sepal_length', 'mean'), sepal_length_Median=('sepal_length', 'median'), sepal_length_Std=('sepal_length', 'std'),petal_length_Mean=('petal_length', 'mean'), petal_length_Median=('petal_length', 'median'), petal_length_Std=('petal_length', 'std'),sepal_width_Mean=('sepal_width', 'mean'), sepal_width_Median=('sepal_width', 'median'), sepal_width_Std=('sepal_width', 'std'),petal_width_Mean=('petal_width', 'mean'), petal_width_Median=('petal_width', 'median'), petal_width_Std=('petal_width', 'std')))
 Summary = df.groupby('species').agg(sepal_length_Mean=('sepal_length', 'mean'), sepal_length_Median=('sepal_length', 'median'), sepal_length_Std=('sepal_length', 'std'),petal_length_Mean=('petal_length', 'mean'), petal_length_Median=('petal_length', 'median'), petal_length_Std=('petal_length', 'std'),sepal_width_Mean=('sepal_width', 'mean'), sepal_width_Median=('sepal_width', 'median'), sepal_width_Std=('sepal_width', 'std'),petal_width_Mean=('petal_width', 'mean'), petal_width_Median=('petal_width', 'median'), petal_width_Std=('petal_width', 'std'))
@@ -58,9 +59,9 @@ Summary.plot.barh(subplots=True,legend= False,fontsize=10, figsize=(16, 16), ali
 # Adjust sublot positioning to allow easy viewing of the data increase hspace on subplots to avoid titles overlapping plots
 plt.subplots_adjust(bottom=0.1, right=0.8, top=0.9, hspace=0.5)
 
-plt.show()
-
 plt.savefig('AggregatedDataStatsGroupedBySpeciesHorBarChart.png')  
+
+plt.show()
 
 
 
