@@ -10,7 +10,7 @@ Through an analysis of these values together it is possible to differentiate bet
 
 The initial plotting of the values results in a clear delineation of the Sertosa specimens through its distinct values for Petal length and width however there is a bit more overlap 
 between the other 2 species. The linear discriminant analysis techinque employed by fisher allowed for clearer delineation of the other 2 species by transforming the values and replotting
-them relative to another axis which allowed for clearer delineation of the 2 datasets. I have not gone down this route in the current project but this would be logical nest step in taking 
+them relative to another axis which allowed for clearer delineation of the 2 datasets. I have not gone down this route in the current project but this would be logical next step in taking 
 the analysis of the dataset further as has been described in detail at the towardsdatascience reference below.
 
 The analysis.py script does however produce an additional aggregation of the Iris datasets variables grouping the records by species type and producing group mean,median and standard deviation.
